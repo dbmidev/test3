@@ -1,0 +1,411 @@
+home is
+/var/www/idashRed/storage/recipes/demo1-1-1480455279/1480455279
+Template validated successfully.
+[1;32mdocker output will be in this color.[0m
+
+[1;32m==> docker: Creating a temporary directory for sharing data...[0m
+[1;32m==> docker: Pulling Docker image: ubuntu:latest[0m
+[0;32m    docker: latest: Pulling from library/ubuntu[0m
+[0;32m    docker: af49a5ceb2a5: Pulling fs layer[0m
+[0;32m    docker: 8f9757b472e7: Pulling fs layer[0m
+[0;32m    docker: e931b117db38: Pulling fs layer[0m
+[0;32m    docker: 47b5e16c0811: Pulling fs layer[0m
+[0;32m    docker: 9332eaf1a55b: Pulling fs layer[0m
+[0;32m    docker: 47b5e16c0811: Waiting[0m
+[0;32m    docker: e931b117db38: Download complete[0m
+[0;32m    docker: 8f9757b472e7: Verifying Checksum[0m
+[0;32m    docker: 8f9757b472e7: Download complete[0m
+[0;32m    docker: 47b5e16c0811: Verifying Checksum[0m
+[0;32m    docker: 47b5e16c0811: Download complete[0m
+[0;32m    docker: 9332eaf1a55b: Verifying Checksum[0m
+[0;32m    docker: 9332eaf1a55b: Download complete[0m
+[0;32m    docker: af49a5ceb2a5: Verifying Checksum[0m
+[0;32m    docker: af49a5ceb2a5: Download complete[0m
+[0;32m    docker: af49a5ceb2a5: Pull complete[0m
+[0;32m    docker: 8f9757b472e7: Pull complete[0m
+[0;32m    docker: e931b117db38: Pull complete[0m
+[0;32m    docker: 47b5e16c0811: Pull complete[0m
+[0;32m    docker: 9332eaf1a55b: Pull complete[0m
+[0;32m    docker: Digest: sha256:3b64c309deae7ab0f7dbdd42b6b326261ccd6261da5d88396439353162703fb5[0m
+[0;32m    docker: Status: Downloaded newer image for ubuntu:latest[0m
+[1;32m==> docker: Starting docker container...[0m
+[0;32m    docker: Run command: docker run -v /var/www/idashRed/storage/recipes/demo1-1-1480455279/resources:/opt/flightdeck/resources -v /var/www/idashRed/storage/recipes/demo1-1-1480455279/1480455279:/tmp/recipeDir -v /var/www/idashRed/storage/recipes/demo1-1-1480455279/1480455279/.packer.d/tmp/packer-docker860607461:/packer-files -d -i -t ubuntu:latest /bin/bash[0m
+[0;32m    docker: Container ID: 0abdae35bc0dc3053bf1d133cd16ba4a6b871bf112486a30411c5086cec5d654[0m
+[1;32m==> docker: Provisioning with shell script: /var/www/idashRed/app/Scripts/setupVM.sh[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m=== Installing server dependencies[0m[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: debconf: delaying package configuration, since apt-utils is not installed[0m
+[0;32m    docker: Selecting previously unselected package sudo.[0m
+[0;32m    docker: (Reading database ... 7259 files and directories currently installed.)[0m
+[0;32m    docker: Preparing to unpack .../sudo_1.8.16-0ubuntu1.2_amd64.deb ...[0m
+[0;32m    docker: Unpacking sudo (1.8.16-0ubuntu1.2) ...[0m
+[0;32m    docker: Setting up sudo (1.8.16-0ubuntu1.2) ...[0m
+[0;32m    docker: debconf: delaying package configuration, since apt-utils is not installed[0m
+[0;32m    docker: Selecting previously unselected package libapt-inst2.0:amd64.[0m
+[0;32m    docker: (Reading database ... 7312 files and directories currently installed.)[0m
+[0;32m    docker: Preparing to unpack .../libapt-inst2.0_1.2.15_amd64.deb ...[0m
+[0;32m    docker: Unpacking libapt-inst2.0:amd64 (1.2.15) ...[0m
+[0;32m    docker: Selecting previously unselected package apt-utils.[0m
+[0;32m    docker: Preparing to unpack .../apt-utils_1.2.15_amd64.deb ...[0m
+[0;32m    docker: Unpacking apt-utils (1.2.15) ...[0m
+[0;32m    docker: Processing triggers for libc-bin (2.23-0ubuntu4) ...[0m
+[0;32m    docker: Setting up libapt-inst2.0:amd64 (1.2.15) ...[0m
+[0;32m    docker: Setting up apt-utils (1.2.15) ...[0m
+[0;32m    docker: Processing triggers for libc-bin (2.23-0ubuntu4) ...[0m
+[0;32m    docker: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker: debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76, <> line 67.)[0m
+[0;32m    docker: debconf: falling back to frontend: Readline[0m
+[0;32m    docker: debconf: unable to initialize frontend: Readline[0m
+[0;32m    docker: debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7, <> line 67.)[0m
+[0;32m    docker: debconf: falling back to frontend: Teletype[0m
+[0;32m    docker: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    docker: Selecting previously unselected package libatm1:amd64.[0m
+[0;32m    docker: (Reading database ... 7400 files and directories currently installed.)[0m
+[0;32m    docker: Preparing to unpack .../libatm1_1%3a2.5.1-1.5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libatm1:amd64 (1:2.5.1-1.5) ...[0m
+[0;32m    docker: Selecting previously unselected package libmnl0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libmnl0_1.0.3-5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libmnl0:amd64 (1.0.3-5) ...[0m
+[0;32m    docker: Selecting previously unselected package libpopt0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libpopt0_1.16-10_amd64.deb ...[0m
+[0;32m    docker: Unpacking libpopt0:amd64 (1.16-10) ...[0m
+[0;32m    docker: Selecting previously unselected package libgdbm3:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libgdbm3_1.8.3-13.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libgdbm3:amd64 (1.8.3-13.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libxau6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libxau6:amd64 (1:1.0.8-1) ...[0m
+[0;32m    docker: Selecting previously unselected package libxdmcp6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libxdmcp6_1%3a1.1.2-1.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libxdmcp6:amd64 (1:1.1.2-1.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libxcb1:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libxcb1_1.11.1-1ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libxcb1:amd64 (1.11.1-1ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libx11-data.[0m
+[0;32m    docker: Preparing to unpack .../libx11-data_2%3a1.6.3-1ubuntu2_all.deb ...[0m
+[0;32m    docker: Unpacking libx11-data (2:1.6.3-1ubuntu2) ...[0m
+[0;32m    docker: Selecting previously unselected package libx11-6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libx11-6_2%3a1.6.3-1ubuntu2_amd64.deb ...[0m
+[0;32m    docker: Unpacking libx11-6:amd64 (2:1.6.3-1ubuntu2) ...[0m
+[0;32m    docker: Selecting previously unselected package libxext6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libxext6_2%3a1.3.3-1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libxext6:amd64 (2:1.3.3-1) ...[0m
+[0;32m    docker: Selecting previously unselected package perl-modules-5.22.[0m
+[0;32m    docker: Preparing to unpack .../perl-modules-5.22_5.22.1-9_all.deb ...[0m
+[0;32m    docker: Unpacking perl-modules-5.22 (5.22.1-9) ...[0m
+[0;32m    docker: Selecting previously unselected package libperl5.22:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libperl5.22_5.22.1-9_amd64.deb ...[0m
+[0;32m    docker: Unpacking libperl5.22:amd64 (5.22.1-9) ...[0m
+[0;32m    docker: Selecting previously unselected package perl.[0m
+[0;32m    docker: Preparing to unpack .../perl_5.22.1-9_amd64.deb ...[0m
+[0;32m    docker: Unpacking perl (5.22.1-9) ...[0m
+[0;32m    docker: Selecting previously unselected package iproute2.[0m
+[0;32m    docker: Preparing to unpack .../iproute2_4.3.0-1ubuntu3_amd64.deb ...[0m
+[0;32m    docker: Unpacking iproute2 (4.3.0-1ubuntu3) ...[0m
+[0;32m    docker: Selecting previously unselected package ifupdown.[0m
+[0;32m    docker: Preparing to unpack .../ifupdown_0.8.10ubuntu1.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking ifupdown (0.8.10ubuntu1.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libisc-export160.[0m
+[0;32m    docker: Preparing to unpack .../libisc-export160_1%3a9.10.3.dfsg.P4-8ubuntu1.3_amd64.deb ...[0m
+[0;32m    docker: Unpacking libisc-export160 (1:9.10.3.dfsg.P4-8ubuntu1.3) ...[0m
+[0;32m    docker: Selecting previously unselected package libdns-export162.[0m
+[0;32m    docker: Preparing to unpack .../libdns-export162_1%3a9.10.3.dfsg.P4-8ubuntu1.3_amd64.deb ...[0m
+[0;32m    docker: Unpacking libdns-export162 (1:9.10.3.dfsg.P4-8ubuntu1.3) ...[0m
+[0;32m    docker: Selecting previously unselected package isc-dhcp-client.[0m
+[0;32m    docker: Preparing to unpack .../isc-dhcp-client_4.3.3-5ubuntu12.4_amd64.deb ...[0m
+[0;32m    docker: Unpacking isc-dhcp-client (4.3.3-5ubuntu12.4) ...[0m
+[0;32m    docker: Selecting previously unselected package isc-dhcp-common.[0m
+[0;32m    docker: Preparing to unpack .../isc-dhcp-common_4.3.3-5ubuntu12.4_amd64.deb ...[0m
+[0;32m    docker: Unpacking isc-dhcp-common (4.3.3-5ubuntu12.4) ...[0m
+[0;32m    docker: Selecting previously unselected package less.[0m
+[0;32m    docker: Preparing to unpack .../less_481-2.1ubuntu0.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking less (481-2.1ubuntu0.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libbsd0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libbsd0_0.8.2-1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libbsd0:amd64 (0.8.2-1) ...[0m
+[0;32m    docker: Selecting previously unselected package libexpat1:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.16.04.2_amd64.deb ...[0m
+[0;32m    docker: Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.16.04.2) ...[0m
+[0;32m    docker: Selecting previously unselected package libffi6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...[0m
+[0;32m    docker: Unpacking libffi6:amd64 (3.2.1-4) ...[0m
+[0;32m    docker: Selecting previously unselected package libgmp10:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libgmp10_2%3a6.1.0+dfsg-2_amd64.deb ...[0m
+[0;32m    docker: Unpacking libgmp10:amd64 (2:6.1.0+dfsg-2) ...[0m
+[0;32m    docker: Selecting previously unselected package libnettle6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libnettle6_3.2-1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libnettle6:amd64 (3.2-1) ...[0m
+[0;32m    docker: Selecting previously unselected package libhogweed4:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libhogweed4_3.2-1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libhogweed4:amd64 (3.2-1) ...[0m
+[0;32m    docker: Selecting previously unselected package libidn11:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libidn11_1.32-3ubuntu1.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libidn11:amd64 (1.32-3ubuntu1.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libp11-kit0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libp11-kit0_0.23.2-5~ubuntu16.04.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libtasn1-6:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libtasn1-6_4.7-3ubuntu0.16.04.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libtasn1-6:amd64 (4.7-3ubuntu0.16.04.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libgnutls30:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libgnutls30_3.4.10-4ubuntu1.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libgnutls30:amd64 (3.4.10-4ubuntu1.1) ...[0m
+[0;32m    docker: Selecting previously unselected package libsqlite3-0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libssl1.0.0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.5) ...[0m
+[0;32m    docker: Selecting previously unselected package libxtables11:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libxtables11_1.6.0-2ubuntu3_amd64.deb ...[0m
+[0;32m    docker: Unpacking libxtables11:amd64 (1.6.0-2ubuntu3) ...[0m
+[0;32m    docker: Selecting previously unselected package netbase.[0m
+[0;32m    docker: Preparing to unpack .../archives/netbase_5.3_all.deb ...[0m
+[0;32m    docker: Unpacking netbase (5.3) ...[0m
+[0;32m    docker: Selecting previously unselected package openssl.[0m
+[0;32m    docker: Preparing to unpack .../openssl_1.0.2g-1ubuntu4.5_amd64.deb ...[0m
+[0;32m    docker: Unpacking openssl (1.0.2g-1ubuntu4.5) ...[0m
+[0;32m    docker: Selecting previously unselected package ca-certificates.[0m
+[0;32m    docker: Preparing to unpack .../ca-certificates_20160104ubuntu1_all.deb ...[0m
+[0;32m    docker: Unpacking ca-certificates (20160104ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package krb5-locales.[0m
+[0;32m    docker: Preparing to unpack .../krb5-locales_1.13.2+dfsg-5_all.deb ...[0m
+[0;32m    docker: Unpacking krb5-locales (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Selecting previously unselected package libroken18-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libroken18-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libasn1-8-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libasn1-8-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libkrb5support0:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libkrb5support0_1.13.2+dfsg-5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libkrb5support0:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Selecting previously unselected package libk5crypto3:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libk5crypto3_1.13.2+dfsg-5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libk5crypto3:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Selecting previously unselected package libkeyutils1:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libkeyutils1_1.5.9-8ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libkeyutils1:amd64 (1.5.9-8ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libkrb5-3:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libkrb5-3_1.13.2+dfsg-5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libkrb5-3:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Selecting previously unselected package libgssapi-krb5-2:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libgssapi-krb5-2_1.13.2+dfsg-5_amd64.deb ...[0m
+[0;32m    docker: Unpacking libgssapi-krb5-2:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Selecting previously unselected package libhcrypto4-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libhcrypto4-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libheimbase1-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libheimbase1-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libwind0-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libwind0-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libhx509-5-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libhx509-5-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libkrb5-26-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libkrb5-26-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libheimntlm0-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libheimntlm0-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libgssapi3-heimdal:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libgssapi3-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package libsasl2-modules-db:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-14build1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...[0m
+[0;32m    docker: Selecting previously unselected package libsasl2-2:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-14build1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...[0m
+[0;32m    docker: Selecting previously unselected package libldap-2.4-2:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libldap-2.4-2_2.4.42+dfsg-2ubuntu3.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.1) ...[0m
+[0;32m    docker: Selecting previously unselected package librtmp1:amd64.[0m
+[0;32m    docker: Preparing to unpack .../librtmp1_2.4+20151223.gitfa8646d-1build1_amd64.deb ...[0m
+[0;32m    docker: Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d-1build1) ...[0m
+[0;32m    docker: Selecting previously unselected package libcurl3-gnutls:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libcurl3-gnutls_7.47.0-1ubuntu2.2_amd64.deb ...[0m
+[0;32m    docker: Unpacking libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.2) ...[0m
+[0;32m    docker: Selecting previously unselected package libedit2:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libedit2_3.1-20150325-1ubuntu2_amd64.deb ...[0m
+[0;32m    docker: Unpacking libedit2:amd64 (3.1-20150325-1ubuntu2) ...[0m
+[0;32m    docker: Selecting previously unselected package libsasl2-modules:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libsasl2-modules_2.1.26.dfsg1-14build1_amd64.deb ...[0m
+[0;32m    docker: Unpacking libsasl2-modules:amd64 (2.1.26.dfsg1-14build1) ...[0m
+[0;32m    docker: Selecting previously unselected package libxmuu1:amd64.[0m
+[0;32m    docker: Preparing to unpack .../libxmuu1_2%3a1.1.2-2_amd64.deb ...[0m
+[0;32m    docker: Unpacking libxmuu1:amd64 (2:1.1.2-2) ...[0m
+[0;32m    docker: Selecting previously unselected package openssh-client.[0m
+[0;32m    docker: Preparing to unpack .../openssh-client_1%3a7.2p2-4ubuntu2.1_amd64.deb ...[0m
+[0;32m    docker: Unpacking openssh-client (1:7.2p2-4ubuntu2.1) ...[0m
+[0;32m    docker: Selecting previously unselected package rsync.[0m
+[0;32m    docker: Preparing to unpack .../rsync_3.1.1-3ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking rsync (3.1.1-3ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package xauth.[0m
+[0;32m    docker: Preparing to unpack .../xauth_1%3a1.0.9-1ubuntu2_amd64.deb ...[0m
+[0;32m    docker: Unpacking xauth (1:1.0.9-1ubuntu2) ...[0m
+[0;32m    docker: Selecting previously unselected package liberror-perl.[0m
+[0;32m    docker: Preparing to unpack .../liberror-perl_0.17-1.2_all.deb ...[0m
+[0;32m    docker: Unpacking liberror-perl (0.17-1.2) ...[0m
+[0;32m    docker: Selecting previously unselected package git-man.[0m
+[0;32m    docker: Preparing to unpack .../git-man_1%3a2.7.4-0ubuntu1_all.deb ...[0m
+[0;32m    docker: Unpacking git-man (1:2.7.4-0ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package git.[0m
+[0;32m    docker: Preparing to unpack .../git_1%3a2.7.4-0ubuntu1_amd64.deb ...[0m
+[0;32m    docker: Unpacking git (1:2.7.4-0ubuntu1) ...[0m
+[0;32m    docker: Selecting previously unselected package patch.[0m
+[0;32m    docker: Preparing to unpack .../patch_2.7.5-1_amd64.deb ...[0m
+[0;32m    docker: Unpacking patch (2.7.5-1) ...[0m
+[0;32m    docker: Selecting previously unselected package rename.[0m
+[0;32m    docker: Preparing to unpack .../archives/rename_0.20-4_all.deb ...[0m
+[0;32m    docker: Unpacking rename (0.20-4) ...[0m
+[0;32m    docker: Processing triggers for libc-bin (2.23-0ubuntu4) ...[0m
+[0;32m    docker: Processing triggers for systemd (229-4ubuntu12) ...[0m
+[0;32m    docker: Setting up libatm1:amd64 (1:2.5.1-1.5) ...[0m
+[0;32m    docker: Setting up libmnl0:amd64 (1.0.3-5) ...[0m
+[0;32m    docker: Setting up libpopt0:amd64 (1.16-10) ...[0m
+[0;32m    docker: Setting up libgdbm3:amd64 (1.8.3-13.1) ...[0m
+[0;32m    docker: Setting up libxau6:amd64 (1:1.0.8-1) ...[0m
+[0;32m    docker: Setting up libxdmcp6:amd64 (1:1.1.2-1.1) ...[0m
+[0;32m    docker: Setting up libxcb1:amd64 (1.11.1-1ubuntu1) ...[0m
+[0;32m    docker: Setting up libx11-data (2:1.6.3-1ubuntu2) ...[0m
+[0;32m    docker: Setting up libx11-6:amd64 (2:1.6.3-1ubuntu2) ...[0m
+[0;32m    docker: Setting up libxext6:amd64 (2:1.3.3-1) ...[0m
+[0;32m    docker: Setting up perl-modules-5.22 (5.22.1-9) ...[0m
+[0;32m    docker: Setting up libperl5.22:amd64 (5.22.1-9) ...[0m
+[0;32m    docker: Setting up perl (5.22.1-9) ...[0m
+[0;32m    docker: update-alternatives: using /usr/bin/prename to provide /usr/bin/rename (rename) in auto mode[0m
+[0;32m    docker: Setting up iproute2 (4.3.0-1ubuntu3) ...[0m
+[0;32m    docker: Setting up ifupdown (0.8.10ubuntu1.1) ...[0m
+[0;32m    docker: Creating /etc/network/interfaces.[0m
+[0;32m    docker: Setting up libisc-export160 (1:9.10.3.dfsg.P4-8ubuntu1.3) ...[0m
+[0;32m    docker: Setting up libdns-export162 (1:9.10.3.dfsg.P4-8ubuntu1.3) ...[0m
+[0;32m    docker: Setting up isc-dhcp-client (4.3.3-5ubuntu12.4) ...[0m
+[0;32m    docker: Setting up isc-dhcp-common (4.3.3-5ubuntu12.4) ...[0m
+[0;32m    docker: Setting up less (481-2.1ubuntu0.1) ...[0m
+[0;32m    docker: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker: debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)[0m
+[0;32m    docker: debconf: falling back to frontend: Readline[0m
+[0;32m    docker: Setting up libbsd0:amd64 (0.8.2-1) ...[0m
+[0;32m    docker: Setting up libexpat1:amd64 (2.1.0-7ubuntu0.16.04.2) ...[0m
+[0;32m    docker: Setting up libffi6:amd64 (3.2.1-4) ...[0m
+[0;32m    docker: Setting up libgmp10:amd64 (2:6.1.0+dfsg-2) ...[0m
+[0;32m    docker: Setting up libnettle6:amd64 (3.2-1) ...[0m
+[0;32m    docker: Setting up libhogweed4:amd64 (3.2-1) ...[0m
+[0;32m    docker: Setting up libidn11:amd64 (1.32-3ubuntu1.1) ...[0m
+[0;32m    docker: Setting up libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...[0m
+[0;32m    docker: Setting up libtasn1-6:amd64 (4.7-3ubuntu0.16.04.1) ...[0m
+[0;32m    docker: Setting up libgnutls30:amd64 (3.4.10-4ubuntu1.1) ...[0m
+[0;32m    docker: Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...[0m
+[0;32m    docker: Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.5) ...[0m
+[0;32m    docker: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker: debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)[0m
+[0;32m    docker: debconf: falling back to frontend: Readline[0m
+[0;32m    docker: Setting up libxtables11:amd64 (1.6.0-2ubuntu3) ...[0m
+[0;32m    docker: Setting up netbase (5.3) ...[0m
+[0;32m    docker: Setting up openssl (1.0.2g-1ubuntu4.5) ...[0m
+[0;32m    docker: Setting up ca-certificates (20160104ubuntu1) ...[0m
+[0;32m    docker: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker: debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)[0m
+[0;32m    docker: debconf: falling back to frontend: Readline[0m
+[0;32m    docker: Setting up krb5-locales (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Setting up libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libkrb5support0:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Setting up libk5crypto3:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Setting up libkeyutils1:amd64 (1.5.9-8ubuntu1) ...[0m
+[0;32m    docker: Setting up libkrb5-3:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Setting up libgssapi-krb5-2:amd64 (1.13.2+dfsg-5) ...[0m
+[0;32m    docker: Setting up libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...[0m
+[0;32m    docker: Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...[0m
+[0;32m    docker: Setting up libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...[0m
+[0;32m    docker: Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.1) ...[0m
+[0;32m    docker: Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d-1build1) ...[0m
+[0;32m    docker: Setting up libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.2) ...[0m
+[0;32m    docker: Setting up libedit2:amd64 (3.1-20150325-1ubuntu2) ...[0m
+[0;32m    docker: Setting up libsasl2-modules:amd64 (2.1.26.dfsg1-14build1) ...[0m
+[0;32m    docker: Setting up libxmuu1:amd64 (2:1.1.2-2) ...[0m
+[0;32m    docker: Setting up openssh-client (1:7.2p2-4ubuntu2.1) ...[0m
+[0;32m    docker: Setting up rsync (3.1.1-3ubuntu1) ...[0m
+[0;32m    docker: invoke-rc.d: could not determine current runlevel[0m
+[0;32m    docker: invoke-rc.d: policy-rc.d denied execution of restart.[0m
+[0;32m    docker: Setting up xauth (1:1.0.9-1ubuntu2) ...[0m
+[0;32m    docker: Setting up liberror-perl (0.17-1.2) ...[0m
+[0;32m    docker: Setting up git-man (1:2.7.4-0ubuntu1) ...[0m
+[0;32m    docker: Setting up git (1:2.7.4-0ubuntu1) ...[0m
+[0;32m    docker: Setting up patch (2.7.5-1) ...[0m
+[0;32m    docker: Setting up rename (0.20-4) ...[0m
+[0;32m    docker: update-alternatives: using /usr/bin/file-rename to provide /usr/bin/rename (rename) in auto mode[0m
+[0;32m    docker: Processing triggers for libc-bin (2.23-0ubuntu4) ...[0m
+[0;32m    docker: Processing triggers for systemd (229-4ubuntu12) ...[0m
+[0;32m    docker: Processing triggers for ca-certificates (20160104ubuntu1) ...[0m
+[0;32m    docker: Updating certificates in /etc/ssl/certs...[0m
+[0;32m    docker: 173 added, 0 removed; done.[0m
+[0;32m    docker: Running hooks in /etc/ca-certificates/update.d...[0m
+[0;32m    docker: done.[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m=== Setting up /opt/flightdeck[0m[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m=== Setting up /workspace[0m[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m=================[0m[0m
+[0;32m    docker: [1;35m=== Downloading recipe files[0m[0m
+[0;32m    docker: [1;35m=================[0m[0m
+[1;32m==> docker: Provisioning with shell script: /tmp/packer-shell453943163[0m
+[0;32m    docker: Copying recipe files[0m
+[1;32m==> docker: Provisioning with shell script: /tmp/packer-shell003679065[0m
+[1;32m==> docker: Provisioning with shell script: /tmp/packer-shell051137545[0m
+[0;32m    docker: provisioned[0m
+[1;32m==> docker: Provisioning with shell script: /tmp/packer-shell128423842[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m=== Compressing Resource Data [0m[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: Putting in blank text[0m
+[0;32m    docker: creating resource data[0m
+[0;32m    docker: tar: Removing leading `/' from member names[0m
+[0;32m    docker: /opt/flightdeck/resources/dummyfiller.txt[0m
+[1;32m==> docker: Provisioning with shell script: /tmp/packer-shell675305231[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[0;32m    docker: [1;35m=== Running Validation [0m[0m
+[0;32m    docker: [1;35m==================================[0m[0m
+[1;32m==> docker: Committing the container[0m
+[0;32m    docker: Image ID: sha256:83ef77850b538be5c86e00acfdc5d938a5b3b82aa53d6571c02ce08ddb992c26[0m
+[1;32m==> docker: Killing the container: 0abdae35bc0dc3053bf1d133cd16ba4a6b871bf112486a30411c5086cec5d654[0m
+[1;32m==> docker: Running post-processor: docker-tag[0m
+[0;32m    docker (docker-tag): Tagging image: sha256:83ef77850b538be5c86e00acfdc5d938a5b3b82aa53d6571c02ce08ddb992c26[0m
+[0;32m    docker (docker-tag): Repository: idashred/demo1:1480455279[0m
+[1;32m==> docker: Running post-processor: docker-push[0m
+[0;32m    docker (docker-push): Logging in...[0m
+[0;32m    docker (docker-push): Flag --email has been deprecated, will be removed in 1.13.[0m
+[0;32m    docker (docker-push): Login Succeeded[0m
+[0;32m    docker (docker-push): Pushing: idashred/demo1:1480455279[0m
+[0;32m    docker (docker-push): The push refers to a repository [docker.io/idashred/demo1][0m
+[0;32m    docker (docker-push): 0479ee6ed721: Preparing[0m
+[0;32m    docker (docker-push): 0d45be5b95d8: Preparing[0m
+[0;32m    docker (docker-push): 18568efa7ad4: Preparing[0m
+[0;32m    docker (docker-push): 1c53295311c1: Preparing[0m
+[0;32m    docker (docker-push): dfcc17ddae9e: Preparing[0m
+[0;32m    docker (docker-push): d29d52f94ad5: Preparing[0m
+[0;32m    docker (docker-push): 0d45be5b95d8: Mounted from library/ubuntu[0m
+[0;32m    docker (docker-push): 18568efa7ad4: Mounted from library/ubuntu[0m
+[0;32m    docker (docker-push): 1c53295311c1: Mounted from library/ubuntu[0m
+[0;32m    docker (docker-push): dfcc17ddae9e: Mounted from library/ubuntu[0m
+[0;32m    docker (docker-push): d29d52f94ad5: Mounted from library/ubuntu[0m
+[0;32m    docker (docker-push): 0479ee6ed721: Pushed[0m
+[0;32m    docker (docker-push): 1480455279: digest: sha256:4ad580a51fc3b6a379a70d7b5c6f587533acb90ce5720fbddb8d8988d67f2f26 size: 1569[0m
+[0;32m    docker (docker-push): Logging out...[0m
+[0;32m    docker (docker-push): Remove login credentials for https://index.docker.io/v1/[0m
+[1;32mBuild 'docker' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> docker: Imported Docker image: sha256:83ef77850b538be5c86e00acfdc5d938a5b3b82aa53d6571c02ce08ddb992c26

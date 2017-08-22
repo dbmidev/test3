@@ -1,0 +1,85 @@
+{
+  "variables":{
+    "dockerhub_email":"",
+    "dockerhub_username":"",
+    "dockerhub_password":""
+  },
+  "builders":[
+    {
+      "type":"docker",
+      "image":"ubuntu:latest",
+      "commit":"true",
+      "volumes":{
+        "/var/www/idashRed/storage/recipes/demo1-1-1480455279/resources":"/opt/flightdeck/resources",
+        "/var/www/idashRed/storage/recipes/demo1-1-1480455279/1480455279":"/tmp/recipeDir"
+      }
+    }
+  ],
+  "provisioners":[
+    {
+      "type":"shell",
+      "script":"/var/www/idashRed/app/Scripts/setupVM.sh"
+    },
+    {
+      "type":"shell",
+      "inline":[
+        "cd /opt/flightdeck ",
+        "echo 'Copying recipe files'",
+        "cp /tmp/recipeDir/* . 2>/dev/null || ",
+        "echo 'Recipe files copied'"
+      ]
+    },
+    {
+      "type":"shell",
+      "inline":[
+        "chmod -R 777 /opt/flightdeck"
+      ]
+    },
+    {
+      "type":"shell",
+      "inline":[
+        "cd /opt/flightdeck ",
+        "bash provision.sh"
+      ]
+    },
+    {
+      "type":"shell",
+      "inline":[
+        "bash -c 'echo -e \"\\e[1;35m==================================\\e[0m\"'",
+        "bash -c 'echo -e \"\\e[1;35m=== Compressing Resource Data \\e[0m\"'",
+        "bash -c 'echo -e \"\\e[1;35m==================================\\e[0m\"'",
+        "rm -f /opt/flightdeck/resources/resources.tgz 2> /dev/null ",
+        "echo 'Putting in blank text'",
+        "echo 'filler' > /opt/flightdeck/resources/dummyfiller.txt",
+        "echo 'creating resource data'",
+        "tar -C /opt/flightdeck/resources -czvf /tmp/recipeDir/demo1_resources.tgz /opt/flightdeck/resources/*"
+      ]
+    },
+    {
+      "type":"shell",
+      "inline":[
+        "bash -c 'echo -e \"\\e[1;35m==================================\\e[0m\"'",
+        "bash -c 'echo -e \"\\e[1;35m=== Running Validation \\e[0m\"'",
+        "bash -c 'echo -e \"\\e[1;35m==================================\\e[0m\"'",
+        "cd /opt/flightdeck ",
+        "bash validate.sh"
+      ]
+    }
+  ],
+  "post-processors":[
+    [
+      {
+        "type":"docker-tag",
+        "repository":"idashred/demo1",
+        "tag":"1480455279"
+      },
+      {
+        "type":"docker-push",
+        "login":"true",
+        "login_email":"{{user `dockerhub_email`}}",
+        "login_username":"{{user `dockerhub_username`}}",
+        "login_password":"{{user `dockerhub_password`}}"
+      }
+    ]
+  ]
+}
